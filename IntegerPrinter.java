@@ -1,35 +1,20 @@
- 
+ import java.lang.Math;
 
 
 public class IntegerPrinter {
 
     public String printIntegerAsBinary(int value){
-        String result = "";
-        while (value >= 1) {
-            result = result + (value % 2);
-            value = value / 2;
-        }
-        return result;
+       return Integer.toBinaryString(value);
         
     }
 
     public String printIntegerAsOctal(int value){
-        String result = "";
-        while (value >= 1) {
-            result = result + (value % 8);
-            value = value / 2;
-        }
-        return result;
+       return Integer.toOctalString(value);
     
     }
 
     public String printIntegerAsHexadecimal(int value){
-       String result = "";
-       while (value >= 1) {
-            result = result + (value % 16);
-            value = value / 2;
-       }
-       return result;
+       return Integer.toHexString(value);
     
     }
 
